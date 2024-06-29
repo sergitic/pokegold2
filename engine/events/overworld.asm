@@ -354,6 +354,8 @@ SurfFunction:
 	jr nz, .cannotsurf
 	call CheckDirection
 	jr c, .cannotsurf
+	farcall CheckFacingObject
+	jr c, .cannotsurf
 	ld a, $1
 	ret
 .nofogbadge
