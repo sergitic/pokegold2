@@ -1072,7 +1072,7 @@ BeatUpAttackText:
 	done
 
 PresentFailedText:
-	text "<TARGET>
+	text "<TARGET>"
 	line "refused the gift!"
 	prompt
 
