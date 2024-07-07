@@ -331,7 +331,7 @@ DoPlayerMovement::
 	jr .fast
 
 .ensurewalk:
-	ld a, [wPlaterState]
+	ld a, [wPlayerState]
 	cp PLAYER_NORMAL
 	call nz, .StartWalking
 	jr .walk
